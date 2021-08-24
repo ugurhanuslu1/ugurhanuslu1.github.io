@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Kral Müzik | Sayfa bakım çalışması devam etmekte</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+        html,
+        body {
+            height: 100%;
+            margin: 0 auto;
+        }
+        .container {
+            height: 100%;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container .box {
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .cogs-frame .icon-cogs{
+            width: 6rem;
+        }
+        .dyg-logo-frame .dyg-logo{
+            width: 10rem;
+        }
+
+        /* header alanı için gerekirse...*/
+        .container .box-1 {
+            background-color: green;
+            height: 60px;
+        }
+
+        .container .box-2 {
+            background-color: #000;
+            flex: 1;
+            color: #000;
+        }
+
+        /* footer alanı için gerekirse...*/
+        .container .box-3 {
+            background-color: red;
+            height: 60px;
+        }
+
+        .maintenance-frame{
+            display: inline-block;
+            width: 100%;
+        }
+
+        .maintenance-frame p {
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+
+        .maintenance-frame p:first-child{
+            font-size: 1.87rem;
+            margin-bottom: 0;
+            line-height:  3.21rem;
+            font-weight: bolder;
+        }
+
+        .maintenance-frame p:nth-child(2) {
+            font-size: 1.55rem;
+            padding-top: 0;
+            margin-top: 0;
+            font-weight: 300;
+        }
+        @media screen and (min-width: 300px) and (max-width: 400px){
+            html,body{
+                font-size: 14px;
+            }
+        }
+
+        @media screen and (min-width: 400px) and (max-width: 530px){
+            html,body{
+                font-size: 15.5px;
+            }
+        }
+        @media screen and (min-width: 500px) and (max-width: 768px){
+            html,body{
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (min-width: 300px) and (max-width: 768px) {
+            .maintenance-frame p:first-child{
+                font-size: 1.1rem;
+                line-height:  2.41rem;
+            }
+            .maintenance-frame p:nth-child(2){
+                font-size: .98rem;
+            }
+            .cogs-frame .icon-cogs{
+                width: 4rem;
+            }
+            .dyg-logo-frame .dyg-logo{
+                width: 8rem;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box box-2">
+        <div class="cogs-frame"><img src="images/cogs.png" alt="bakım aşamasında" class="icon-cogs"/></div>
+        <div class="maintenance-frame">
+            <p>Şu an bakım çalışması yapılmaktadır.</p>
+            <p>Sabrınız için teşekkür ederiz.</p>s
+        </div>
+        <div class="dyg-logo-frame"><img src="images/dyg-logo-bcg-fff.svg" alt="Doğuş Yayın Grubu" class="dyg-logo"/></div>
+    </div>
+</div>
+</body>
+</html>
